@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Dancing+Script&family=Ibarra+Real+Nova:ital@0;1&family=Square+Peg&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+.topbar {
+  
+    background: #fff;
+    height: 40px;
+    font-size: 18px;
+    transition: all 0.5s;
+    z-index: 1200;
+}
+
+.topbar .contact-info a {
+    font-family: 'Arvo', serif;
+    line-height: 1;
+    color: #444444;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.topbar .contact-info a:hover,
+.topbar .social-links a:hover {
+  color: #1977cc;
+}
+
+
+.topbar .contact-info i:first-child {
+  margin-left: 0;
+}
+
+.topbar .social-links a {
+  color: #437099;
+  padding: 0 15px;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1px;
+  transition: 0.3s;
+}
+
+
+
+.navbar {
+  padding: 0;
+  z-index: 1195; 
+  position: fixed; 
+  top: 40px; 
+  left: 0;
+  right: 0;
+  z-index: 1195; 
+  width: 100%; 
+}
+
+.nav-item a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #1193fd;
+  white-space: nowrap;
+  transition: 0.3s;
+  border-bottom: 2px solid rgb(33, 134, 241);
+  padding: 5px 2px;
+}
+
+.nav-item .a1 {
+  font-family: 'Arvo', serif;
+  font-size: larger;
+}
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.container-fluid {
+  position: relative;
+  border-radius: 5px;
+  padding: 4px 12px;
+  background-color: #fff;
+  box-shadow: 0px 2px 15px rgb(25 119 204 / 10%);
+}
+
+.me-auto {
+  text-decoration: none;
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  color: #24788F;
+}
+.topbar .contact-info i,
+.topbar .social-links a {
+  color: #437099;
+  padding-right: 4px;
+  margin-left: 15px;
+  line-height: 0;
+}
+
+.topbar .contact-info i:first-child,
+.topbar .social-links a:first-child {
+  margin-left: 0;
+}
+
+  #hero {
+    width: 100%;
+    height: 110vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0.3, 0.7), #474a484d),
+                url("https://i.pinimg.com/originals/92/2d/db/922ddb2a059239227bacce840040b302.jpg") top center;
+    background-size: cover;
+    margin-bottom: -200px;
+    position: relative;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    transform: translateY(-60%);
+}
+
+#hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+#hero h2 {
+    font-size: 32px; /* Smaller than h1 but still prominent */
+    font-weight: 400; /* Lighter than h1 for contrast */
+    color: #d8d8d8; /* A lighter shade that stands out */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); 
+    margin: 20px 0; /* Adequate spacing from h1 */
+    padding: 0;
+    font-family: 'Arvo', serif; /* Consistent with h1 */
+    text-transform: capitalize; 
+}
+
+#hero .btn-get-started {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 35px;
+  margin-top: 30px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  color: #fff;
+  background: #849DAB;
+  border: 2px solid transparent; /* New border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* New shadow */
+}
+
+#hero .btn-get-started:hover {
+  background: #3291e6;
+  border-color: #fff; /* Border color changes on hover */
+  transform: translateY(-3px); /* Button moves up slightly on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow intensifies on hover */
+}
+
+@media (max-height: 600px) {
+  #hero {
+    height: 110vh;
+  }
+}
+
+.teachers {
+  /* background: linear-gradient(0deg, rgba(36, 120, 143, 0.479), rgba(132, 157, 171, 0.479)); */
+  background-size: cover;
+  margin-top: 120px;
+  padding: 50px;
+}
+
+
+.teachers .member {
+  position: relative;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  border: 1px solid #472731; /* Deep burgundy for a bold look */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, rgba(36, 120, 143, 0.1), rgba(132, 157, 171, 0.1));
+
+}
+.teachers .member:hover {
+  /* Lighter gradient on hover */
+  background: linear-gradient(90deg, rgba(36, 120, 143, 0.2), rgba(132, 157, 171, 0.2));
+}
+.teachers .section-title h2 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: #2c4964; /* Adjust the color to fit the theme */
+}
+
+.teachers .member .pic {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+
+.teachers .member:hover img {
+  transform: scale(1.1);
+}
+.teachers .member .member-img {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 200px; 
+}
+
+.teachers .member img {
+  max-width: 250px;
+  max-height: 200px; 
+  width: auto;
+  height: auto; 
+}
+
+.teachers .member .member-info {
+  padding-left: 20px;
+}
+
+.teachers .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #2c4964; /* Match the color with the section title */
+}
+
+.teachers .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.teachers .member span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #b2c8dd;
+  bottom: 0;
+  left: 0;
+}
+
+.teachers .member p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.teachers .section-title h2 {
+  font-family: 'Arvo', serif;
+  color: #33475b; /* A slightly darker shade for better contrast */
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-weight: bold; /* Make the heading bold */
+}
+
+.teachers .section-title p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.25vw; /* Responsive font size */
+  line-height: 1.6; /* Improved line spacing for readability */
+  color: #4a6178; /* A softer color for the paragraph text */
+}
